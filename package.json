@@ -1,0 +1,26 @@
+{
+  "name": "personal-desktop-spa",
+  "version": "1.0.0",
+  "description": "Personal Web Desktop SPA. Part of the university web development course",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kmelnyk88/personal-desktop-spa.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kmelnyk88/personal-desktop-spa/issues"
+  },
+  "homepage": "https://github.com/kmelnyk88/personal-desktop-spa#readme",
+  "devDependencies": {
+    "jsdoc": "^4.0.2",
+    "vite": "^4.1.4"
+  }
+}

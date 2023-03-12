@@ -1,0 +1,183 @@
+
+/* Toggle theme button style */
+.toggle-btn {
+  position: relative;
+  width: 30px;
+  height: 14px;
+  border: 2px solid #2a2a2a;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-right: 5px;
+}
+
+.circle {
+  position: absolute;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  border-radius: 20px;
+  background-color: #2a2a2a;
+  transition: 0.3s;
+}
+
+.active {
+  border-color: #68478d;
+}
+
+.active .circle {
+  left: 100%;
+  transform: translateX(-100%);
+  transition: 0.3s;
+  background-color: #68478d;
+}
+
+/* Chat area style */
+.chat-messages {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: rgba(20, 14, 190, 0.06);
+  overflow: auto;
+  border-radius: 5px;
+}
+
+.user-input {
+  min-width: 90%;
+  max-width: 90%;
+  min-height: 3rem;
+  max-height: 3rem;
+  align-self: center;
+  margin: 0.25rem 0;
+  border-radius: 8px;
+  padding: 0.3rem;
+  font-family: sans-serif;
+  font-size: 0.85rem;
+  background-color: rgba(255, 255, 255, 0.866);
+}
+
+textarea:focus {
+  outline: none;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(136, 136, 136, 0.437);
+  border-radius: 10px;
+}
+
+/* Chat message style */
+li {
+  margin: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  color: rgb(202, 198, 198);
+  letter-spacing: 1px;
+}
+
+li.light {
+  color: #2e1a47;
+}
+
+.message-header {
+  background-color: rgba(0, 0, 0, 0.219);
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+h4 {
+  margin: 0;
+  font-weight: 600;
+  border-radius: 4px;
+  max-width: 50%;
+  word-wrap: break-word;
+}
+
+.timestamp {
+  color: #979797;
+  font-size: 0.7rem;
+  margin: 0;
+}
+
+.timestamp.light {
+  color: inherit;
+}
+
+span {
+  padding: 0 0.5rem;
+  word-wrap: break-word;
+}
+
+/* Register user style */
+.register-user {
+  margin: 2rem 0;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.username {
+  height: 1.5rem;
+  width: 10rem;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.866);
+}
+
+.username:focus {
+  outline: none;
+}
+
+input[type=submit] {
+  align-self: flex-start;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 5px;
+  color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  margin: 1rem 0;
+}
+
+/* Edit username style */
+
+.edit-username {
+  display: flex;
+  border-radius: 15px;
+  padding: 2px;
+  margin-right: 3px;
+}
+
+.edit-btn {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+.edit-username-input {
+  padding: 0;
+  width: 0;
+  background-color: whitesmoke;
+  border: none;
+  border-radius: inherit;
+  outline: none;
+  transition: 0.6s;
+}
+
+.editing {
+  width: 120px;
+  padding: 0 5px;
+  margin-right: 5px;
+  transition: 0.5s;
+}
